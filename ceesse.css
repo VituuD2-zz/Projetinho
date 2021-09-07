@@ -10,9 +10,10 @@ header{
     text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.363);
 }
 
-section{
-
+a:visited{
+    color: white;
 }
+
 div#block1{
     box-shadow: 2px 2px 12px black;
     text-shadow: 2px 2px 2px black;
@@ -55,5 +56,5 @@ footer{
     font:italic 13pt Arial;
     color: white;
     text-align: center;
-    margin-top: 240px;
+    margin-top: 210px;
 }
