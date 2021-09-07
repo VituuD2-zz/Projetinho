@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(52, 50, 59);
+}
+
+header{
+    font:bold 21pt Arial;
+    color:rgb(206, 73, 73);
+    margin:auto;
+    text-align: center;
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.363);
+}
+
+section{
+
+}
+div#block1{
+    box-shadow: 2px 2px 12px black;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font:bold 12pt Arial;
+    text-align: center;
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+}
+div#block2{
+    box-shadow: 2px 2px 12px black;
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font:bold 12pt Arial;
+    text-align: center;
+    margin-left:-160px;
+    margin-top: 200px;
+    background-color: white;
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+}
+div#logo1{
+    margin-left: 0px;
+    margin-top: 50px;
+    width: 60px;
+    height: 61px;
+    cursor: pointer;
+}
+div#logo2{
+    margin-left: -60px;
+    margin-top: 250px;
+    width: 60px;
+    height: 61px;
+    cursor: pointer;
+}
+
+footer{
+    font:italic 13pt Arial;
+    color: white;
+    text-align: center;
+    margin-top: 240px;
+}
