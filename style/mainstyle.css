@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap');
+
+:root{
+    --bg-color:#1a1a1a;
+    --header-red:#E50914;
+    --pastel-red:#e74040;
+    --font-default:'Rubik', Verdana, Arial;
+    --font-title:'Kanit', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+
+header{
+    height: 55px;
+    width: 100vw;
+    background-image: linear-gradient(to top, #1a1a1a, #000 );
+    position: fixed;
+    top: 0%;
+}
+
+h1 {
+    display: inline-block;
+    font: bold 2.8em var(--font-title);
+    color: var(--header-red);
+    text-align: left;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.363);
+    font-variant: small-caps;
+    padding-left: 10px;
+}
+
+nav{
+    display: inline-block;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    padding: 5px 8px 5px 5px;
+    font: normal 0.9em var(--font-default);
+}
+
+nav ul li a{
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #bbbbbb;
+}
+
+.highlighted{
+    font-weight: bolder;
+}
+
+h2{
+    padding-left: 10px;
+    font: bold 1.8em var(--font-default);
+    color: #cecece;
+}
+
+main a{
+    color: white;
+    transition: color 0.3s;
+}
+
+main a:hover{
+    color: var(--header-red);
+}
+
+main a:visited{
+    color: none;
+}
+
+main{
+    margin-top: 60px;
+}
+
+.content_tit p{
+    font: bold 3em var(--font-title);
+    text-align: left;
+    padding: 0px 2px 0px 2px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    font-variant: small-caps;
+    margin: 5px 0px 0px 5px;
+}
+
+.content_tit{
+    width: 95vw;
+    height: 180px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 8px solid var(--bg-color);
+    transition: border 0.2s;
+    max-width: 80%;
+}
+
+.content_tit:hover{
+    border: none;
+}
+
+#title_1{
+    background: black url('../blindspotbig.jpg') center center no-repeat ;
+    background-size: cover;
+}
+
+#title_2{
+    background: black url('../moneyheist.jpg') center center no-repeat ;
+    background-size: cover;
+}
+
+#title_3{
+    background: black url('../suits.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#title_4{
+    background: black url('../peakyb.jpg') top center no-repeat;
+    background-size: cover;
+}
+
+#title_5{
+    background: black url('../ricknmorty.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+footer a{
+    font: bold 13pt var(--font-default);
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+footer a:visited{
+    color: none;
+}
+
+footer p{
+    font:italic 13pt var(--font-default);
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    background-color: var(--pastel-red);
+}
