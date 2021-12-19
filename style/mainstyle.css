@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/*
+test v2.4
+*/
+
 *{
     padding: 0px;
     margin: 0px;
@@ -114,11 +118,6 @@ nav ul li a:hover{
     display: none;
 }
 
-h2{
-    padding-left: 10px;
-    font: bold 1.8em var(--font-default);
-    color: #cecece;
-}
 
 main a{
     color: white;
@@ -137,57 +136,47 @@ main{
     margin-top: 90px;
 }
 
-.content_tit p{
-    font: bold 3em var(--font-title);
-    text-align: left;
-    padding: 0px 2px 0px 2px;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: inline-block;
-    font-variant: small-caps;
-    margin: 5px 0px 0px 5px;
-}
-
 .content_tit{
+    display: block;
     height: 180px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer;
     max-width: 80%;
-    transition: .3s;
+    transition: .3s;  
 }
 
 .content_tit:hover{
-    max-width: 85%;
-    height: 189px;
+    max-width: 88%;
+    height: 198px;
 }
 
+
 #title_1{
-    background: black url('../blindspotbig.jpg') center center no-repeat ;
+    background: black url('../blindspot.jpg') center center no-repeat ;
     background-size: cover;
 }
 
 #title_2{
-    background: black url('../moneyheist.jpg') center center no-repeat ;
-    background-size: cover;
+    background: black url('../lcdp.jpg') 50% 40% no-repeat ;
+    background-size: 101% 210%;
 }
 
 #title_3{
-    background: black url('../suits.jpg') center center no-repeat;
+    background: black url('../suits.jpg') 50% 35% no-repeat;
     background-size: cover;
 }
 
 #title_4{
-    background: black url('../peakyb.jpg') top center no-repeat;
-    background-size: cover;
-}
+    background: black url('../flash.jpg') 50% 35% no-repeat;
+    background-size: 100% 250%;
+}   
 
 #title_5{
-    background: black url('../ricknmorty.jpg') center center no-repeat;
+    background: black url('../dark.jpg  ') 50% 60% no-repeat;
     background-size: cover;
 }
-
-
 
 footer a{
     font: bold 13pt var(--font-default);
@@ -219,7 +208,7 @@ footer p{
     .checkbell, .checkuser{
         display: block;
         position: relative;
-        right: -20%;
+        right: -30%;
         transition: all .5s;
     }
 
@@ -231,6 +220,10 @@ footer p{
         font-size: 2.8em;
         margin-left: 50px;
         display: inline-block;
+    }
+
+    #title_2{
+        background-size: cover;
     }
 
     ul{
@@ -282,6 +275,12 @@ footer p{
     .content_tit p{
         font-size: 2em;
     }
+    .abr_logo{
+        padding-left: 10px;
+    }
+    .checkbell, .checkuser{
+        right: -45%;
+    }
 }
 
 @media all and (max-width:400px){
@@ -292,5 +291,14 @@ footer p{
     }
     .content_tit p{
         font-size: 1.5em;
+    }
+
+    .abr_logo{
+        font-size: 2.4em;
+        margin-left: 25px;
+    }
+
+    .checkbell, .checkuser{
+        right: -60%;
     }
 }
