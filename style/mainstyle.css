@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 /*
-test v2.4
+test v2.5
+19/12/21
+5:45pm
 */
 
 *{
@@ -154,27 +156,27 @@ main{
 
 
 #title_1{
-    background: black url('../blindspot.jpg') center center no-repeat ;
+    background: black url('../blindspot.jpg') center 46% no-repeat ;
     background-size: cover;
 }
 
 #title_2{
-    background: black url('../lcdp.jpg') 50% 40% no-repeat ;
-    background-size: 101% 210%;
+    background: black url('../lcdp.jpg') 50% 47% no-repeat ;
+    background-size: cover;
 }
 
 #title_3{
-    background: black url('../suits.jpg') 50% 35% no-repeat;
+    background: black url('../suitsbg.jpg') 55% center no-repeat;
     background-size: cover;
 }
 
 #title_4{
-    background: black url('../flash.jpg') 50% 35% no-repeat;
-    background-size: 100% 250%;
+    background: black url('../peakyblinders.jpg') 20% 35% no-repeat;
+    background-size: cover;
 }   
 
 #title_5{
-    background: black url('../dark.jpg  ') 50% 60% no-repeat;
+    background: black url('../arrow.jpg  ') 50% 60% no-repeat;
     background-size: cover;
 }
 
@@ -200,7 +202,22 @@ footer p{
     background-color: var(--pastel-red);
 }   
 
-@media all and (max-width: 850px){
+@media all and (max-width: 935px){
+    .checkbell, .checkuser{
+        margin-right: 28px;
+    }
+
+    .main_logo{
+        font-size: 2.5em;
+        padding-left: 28px;
+    }
+
+    nav ul{
+        margin-left: 15px;
+    }
+}
+
+@media all and (max-width: 865px){
     .checkbtn{
         display: block;
     }
@@ -220,10 +237,6 @@ footer p{
         font-size: 2.8em;
         margin-left: 50px;
         display: inline-block;
-    }
-
-    #title_2{
-        background-size: cover;
     }
 
     ul{
@@ -264,6 +277,10 @@ footer p{
     #check:checked ~ .checkuser{
         right: 0;
     }
+
+    #title_4{
+        background-position: 20% 35%;
+    }
 }
 
 @media all and (max-width:600px){
@@ -281,6 +298,16 @@ footer p{
     .checkbell, .checkuser{
         right: -45%;
     }
+
+    #title_4{
+        background-position: 30% 35%;
+    }
+
+    .content_tit:hover{
+        max-width: 86%;
+        height: 178px
+    }
+
 }
 
 @media all and (max-width:400px){
@@ -301,4 +328,10 @@ footer p{
     .checkbell, .checkuser{
         right: -60%;
     }
+
+    .content_tit:hover{
+        max-width: 86%;
+        height: 130px
+    }
+
 }
