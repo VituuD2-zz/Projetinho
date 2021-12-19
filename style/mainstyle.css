@@ -219,7 +219,7 @@ footer p{
     .checkbell, .checkuser{
         display: block;
         position: relative;
-        right: -20%;
+        right: -30%;
         transition: all .5s;
     }
 
@@ -282,6 +282,12 @@ footer p{
     .content_tit p{
         font-size: 2em;
     }
+    .abr_logo{
+        padding-left: 10px;
+    }
+    .checkbell, .checkuser{
+        right: -45%;
+    }
 }
 
 @media all and (max-width:400px){
@@ -292,5 +298,14 @@ footer p{
     }
     .content_tit p{
         font-size: 1.5em;
+    }
+
+    .abr_logo{
+        font-size: 2.4em;
+        margin-left: 25px;
+    }
+
+    .checkbell, .checkuser{
+        right: -60%;
     }
 }
