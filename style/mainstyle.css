@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+/*
+test v2.7
+22/12/21
+1:05am
+*/
+
 *{
     padding: 0px;
     margin: 0px;
@@ -8,17 +14,20 @@
     list-style-type: none
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway/Raleway-Regular.ttf) format('truetype');
+}
 
 :root{
     --header-gray:#131313;
     --bg-color:#1a1a1a;
     --header-red:#E50914;
     --pastel-red:#e74040;
-    --font-default:'Rubik', Verdana, Arial;
-    --font-title:'Kanit', sans-serif;
+    --font-default:'Raleway', sans-serif;
+    --font-title:'Ubuntu', sans-serif;
 }
 
 body{
@@ -27,19 +36,8 @@ body{
 }
 
 .main_logo{
-    font: bold 2.7em var(--font-title);
+    font: bold 2.3rem var(--font-title);
     color: var(--header-red);
-    font-variant: small-caps;
-    text-shadow: 1px 1px 10px #0000004b;
-    line-height: 80px;
-    padding-left: 35px;
-}
-
-.abr_logo{
-    display: none;
-    font: bold 2.5em var(--font-title);
-    color: var(--header-red);
-    font-variant: small-caps;
     text-shadow: 1px 1px 10px #0000004b;
     line-height: 80px;
     padding-left: 35px;
@@ -66,7 +64,7 @@ nav ul li{
 
 nav ul li a{
     margin: 0 10px;
-    font: normal 0.92em var(--font-default);
+    font: normal 1em var(--font-default);
     color: #fff;
     transition: .2s;
 }
@@ -103,7 +101,7 @@ nav ul li a:hover{
     color: white;
     font-size: 22px;
     float: right;
-    line-height: 83px;
+    line-height: 81px;
     margin-right: 35px;
     cursor: pointer;
     display: block;
@@ -114,11 +112,6 @@ nav ul li a:hover{
     display: none;
 }
 
-h2{
-    padding-left: 10px;
-    font: bold 1.8em var(--font-default);
-    color: #cecece;
-}
 
 main a{
     color: white;
@@ -137,57 +130,51 @@ main{
     margin-top: 90px;
 }
 
-.content_tit p{
-    font: bold 3em var(--font-title);
-    text-align: left;
-    padding: 0px 2px 0px 2px;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: inline-block;
-    font-variant: small-caps;
-    margin: 5px 0px 0px 5px;
-}
-
 .content_tit{
+    display: block;
     height: 180px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer;
     max-width: 80%;
-    transition: .3s;
+    transition: all .3s ;  
 }
 
 .content_tit:hover{
-    max-width: 85%;
-    height: 189px;
+    transform: scale(1.1);
+    box-shadow: 0 0 5.5px 4px rgba(0, 0, 0, 0.35);
 }
 
+
 #title_1{
-    background: black url('../blindspotbig.jpg') center center no-repeat ;
+    background: black url('../blindspot.jpg') center 46% no-repeat ;
     background-size: cover;
 }
 
 #title_2{
-    background: black url('../moneyheist.jpg') center center no-repeat ;
+    background: black url('../lcdp.jpg') 50% 47% no-repeat ;
     background-size: cover;
 }
 
 #title_3{
-    background: black url('../suits.jpg') center center no-repeat;
+    background: black url('../suitsbg.jpg') 55% center no-repeat;
     background-size: cover;
 }
 
 #title_4{
-    background: black url('../peakyb.jpg') top center no-repeat;
+    background: black url('../peakyblinders.jpg') 20% 48% no-repeat;
     background-size: cover;
-}
+}   
 
 #title_5{
-    background: black url('../ricknmorty.jpg') center center no-repeat;
+    background: black url('../arrow.jpg  ') 50% 60% no-repeat;
     background-size: cover;
 }
 
-
+footer{
+    box-shadow: 0px -2px 6px 2px rgba(0, 0, 0, 0.205);
+}
 
 footer a{
     font: bold 13pt var(--font-default);
@@ -208,12 +195,32 @@ footer p{
     color: #ffffff;
     text-align: center;
     margin-top: 30px;
-    background-color: var(--pastel-red);
+    padding: 3px 0;
+    background-color: #0f0f0f;
 }   
 
-@media all and (max-width: 850px){
+@media all and (max-width: 935px){
+    .checkbell, .checkuser{
+        margin-right: 28px;
+    }
+
+    .main_logo{
+        font-size: 2.1rem;
+        padding-left: 28px;
+    }
+
+    nav ul{
+        margin-left: 15px;
+    }
+}
+
+@media all and (max-width: 865px){
     .checkbtn{
         display: block;
+    }
+
+    .main_logo{
+        margin-left: 30px;
     }
 
     .checkbell, .checkuser{
@@ -221,16 +228,6 @@ footer p{
         position: relative;
         right: -30%;
         transition: all .5s;
-    }
-
-    .main_logo{
-        display: none;
-    }
-
-    .abr_logo{
-        font-size: 2.8em;
-        margin-left: 50px;
-        display: inline-block;
     }
 
     ul{
@@ -260,6 +257,10 @@ footer p{
         font-size: 22px;
     }
 
+    nav ul li a:hover{
+        color: white;
+    }
+
     #check:checked ~ ul{
         right: 0;
     }
@@ -271,41 +272,47 @@ footer p{
     #check:checked ~ .checkuser{
         right: 0;
     }
+
+    #title_4{
+        background-position: 20% 35%;
+    }
 }
 
 @media all and (max-width:600px){
-    .content_tit{
-        height: 144px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
+
     .content_tit p{
         font-size: 2em;
     }
-    .abr_logo{
-        padding-left: 10px;
+
+    .main_logo{
+        font-size: 1.8rem;
     }
+
     .checkbell, .checkuser{
         right: -45%;
     }
+
+    #title_4{
+        background-position: 20% 35%;
+    }
+
+
 }
 
 @media all and (max-width:400px){
     .content_tit{
-        height: 115px;
-        margin-top: 6px;
-        margin-bottom: 6px;
+        max-height: 115px;
     }
     .content_tit p{
-        font-size: 1.5em;
-    }
-
-    .abr_logo{
-        font-size: 2.4em;
-        margin-left: 25px;
+        font-size: 1.5rem;
     }
 
     .checkbell, .checkuser{
         right: -60%;
     }
+
+    #title_4{
+        background-position: 15% 35%;
+    }
+
 }
